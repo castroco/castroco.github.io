@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        input {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 20px auto 0 auto;
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        //Defining Table
+        // testing github
+        /*
+            Input: The user writes Amount Invested, Anual Rate, Number of Years and Periods per year.
+            Processing: The function computes the future value of the invesment according to the values inserted by the user..
+            Output: Future value of the investment.
+        */
+
+        function averageBig(list) {
+            console.log("in function");
+            numberOfItems = 0;
+            sumOfItems = 0;
+
+            for ( let i=0 ; i < list.length; i++) {
+                if (list[i] > 1000) {
+                    numberOfItems += 1;
+                    sumOfItems += list[i];
+                }
+            }
+
+            if (numberOfItems == 0) {
+                return 0;
+            } else {
+                return sumOfItems/numberOfItems;
+            }
+        }
+        function ReadAndAnswer() {
+            let listOfValues = [ 70, 950, 671, 6 ];
+
+            let answer = averageBig(listOfValues);
+            document.getElementById('outputDiv').innerHTML = answer;
+        }
+    </script>
+    <title>
+        Future Value
+    </title>
+</head>
+<body>
+    
+    <button type="button" onclick="ReadAndAnswer()">Calculate Depreciation</button>
+
+    <div id="outputDiv">
+    </div>
+
+</body>
+</html>
