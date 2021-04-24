@@ -15,7 +15,7 @@ header {
     max-width: 796px;
     /*min-height: 317px;*/
     border-radius: 8px;
-    line-height: 1.5;
+    line-height: 2.2;
     vertical-align: middle;
     font-size: 1.2em;
     color: white;
@@ -48,7 +48,7 @@ footer {
     max-width: 796px;
     /*min-height: 317px;*/
     border-radius: 8px;
-    line-height: 1.5;
+    line-height: 2.2;
     padding: 6px 0;
     color: white;
 
