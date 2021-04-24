@@ -9,7 +9,7 @@ body {
     font-family: 'Quicksand', 'Roboto Condensed', sans-serif;
 }
 header {
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     text-align: center;
     background-color: #0076c6;
     max-width: 796px;
@@ -27,12 +27,14 @@ header img {
 h2 {
    margin: 0 20px 0 10px;
    border-bottom: 2px solid black;
+   font-size: 1.8em;
 }
 ul {
-position: relative;
+    position: relative;
+    font-size: 1.2em;
 }
 footer {
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
     text-align: center;
     background-color: #0076c6;
     max-width: 796px;
