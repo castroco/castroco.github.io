@@ -8,21 +8,10 @@
     <title>Assignments list of WDD230 course    </title>
     <meta name="description" content="Assignment portal for WDD230 course, Carlos Castro, BYU">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="js/assignment.js"></script>
     <script>
         //Defining Table
-        function addUpdatedDate() {
-            try {
-                var dateUpdated = document.lastModified;
-                const pObj = document.querySelector('#lastUpdated');
-                message = `Last updated ${dateUpdated}`;
-                console.log(message);
-                pObj.innerHTML = message;
-            }
-                catch(err) {
-                alert(err.message);
-                console.log(err.message);
-            }
-        }
+        
     </script>
 </head>
 <body onload="addUpdatedDate()">
