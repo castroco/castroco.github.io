@@ -49,7 +49,17 @@
 
     <script>
         //Defining Table
-       
+        function addUpdatedDate() {
+            try {
+                var dateUpdated = document.lastModified;
+                alert(dateUpdated);
+                const pObj = document.querySelector('#lastUpdated');
+                pObj.innerHTML = dateUpdated;
+            }
+                catch(err) {
+                alert(err.message);
+            }
+        }
     </script>
 </head>
 <body>
@@ -65,7 +75,7 @@
         </ul>
         <footer>
             <p>&#169; | Carlos Oliver Castro | Santiago | <a href= "https://www.byui.edu/online">BYU Online Learning</a></p>
-            <p>date</p>
+            <p id="lastUpdated">Last updated  </p>
         </footer>
     </div>
 
