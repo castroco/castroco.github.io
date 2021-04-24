@@ -2,7 +2,6 @@
 function addUpdatedDate() {
     try {
         var dateUpdated = document.lastModified;
-        alert("hola mundo");
         const pObj = document.querySelector('#lastUpdated');
         message = `Last updated ${dateUpdated}`;
         console.log(message);
