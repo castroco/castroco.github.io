@@ -52,17 +52,19 @@
         function addUpdatedDate() {
             try {
                 var dateUpdated = document.lastModified;
-                alert(dateUpdated);
                 const pObj = document.querySelector('#lastUpdated');
-                pObj.innerHTML = dateUpdated;
+                message = `Last updated ${dateUpdated}`;
+                console.log(message);
+                pObj.innerHTML = message;
             }
                 catch(err) {
                 alert(err.message);
+                console.log(err.message);
             }
         }
     </script>
 </head>
-<body>
+<body onload="addUpdatedDate()">
     <div id="asigmentForm" >
         <header>
             <h1>Carlos Oliver Castro</h1>
