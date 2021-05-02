@@ -2,7 +2,7 @@
     
     .gridarea {
         display: grid;
-        grid-template-rows:  1fr 1080px 1fr;
+        grid-template-rows:  1fr 1060px 0.5fr;
         grid-template-columns: 1fr 310px 310px 310px 1fr;
     }
     header {
