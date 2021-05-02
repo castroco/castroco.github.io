@@ -9,9 +9,11 @@ header, footer {
 
 h2 {
     text-align: center;
+    margin: 2px 0;
 }
 h3 {
     text-align: center;
+    margin: 2px 0;
 }
 main {
     background-color: #0076c6;
@@ -20,8 +22,13 @@ article {
     text-align: center;
     background-color: white;
     margin: 4px;
+    padding: 40px 0 ;
 }
 article img {
-    margin: 30px 0 20px 0;
+    margin: 50px 0 20px 0;
 
+}
+article p {
+    text-align: justify;
+    padding: 0 15px;
 }

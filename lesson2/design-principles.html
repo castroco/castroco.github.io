@@ -11,11 +11,11 @@
     <title>Assignments list of WDD230 course    </title>
     <meta name="description" content="Design principles analysis for WDD230 course, Carlos Castro, BYU">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <script src="js/a.js"></script>
+    <script src="js/design.js"></script>
 
 </head>
 
-<body>
+<body onload="addUpdatedDate()">
     <div class="gridarea">
         <header>
             <h1>Design Principle Analysis</h1>
@@ -50,7 +50,8 @@
             </article>
         </main>
         <footer>
-            <p>this is the footer area</p>
+            <p id="fullYear"></p>
+            <p id="lastUpdated">Last updated  </p>
         </footer>
     </div>
 </body>
