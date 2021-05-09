@@ -1,0 +1,21 @@
+
+body {
+    min-height: 600px;
+    font-family: 'Quicksand', sans-serif;
+}
+header, footer {
+	background-color: #2a9d8f;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+footer a{
+    text-decoration: underline;
+    color: white;
+}
+footer #lastUpdated {
+    font-size: 0.8em;
+    color:rgb(255, 253, 163);
+}
