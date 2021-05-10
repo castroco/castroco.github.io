@@ -3,6 +3,12 @@ body {
     /*min-width: 100px;*/
     font-family: 'Quicksand', sans-serif;
 }
+#container {
+    min-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+
+}
 header, footer {
 	background-color: #2a9d8f;
 	display: flex;
@@ -11,6 +17,7 @@ header, footer {
 	justify-content: center;
 	padding: 10px;
 }
+
 footer a{
     text-decoration: underline;
     color: white;
