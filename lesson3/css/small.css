@@ -54,3 +54,11 @@ nav ul li a:hover {
 #colorImg {
     max-width: 359px;
 }
+#robotoFont {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.1em;
+}
+#quicksandFont {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+}
