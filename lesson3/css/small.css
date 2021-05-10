@@ -1,6 +1,6 @@
 
 body {
-    min-height: 600px;
+    /*min-width: 100px;*/
     font-family: 'Quicksand', sans-serif;
 }
 header, footer {
@@ -18,4 +18,32 @@ footer a{
 footer #lastUpdated {
     font-size: 0.8em;
     color:rgb(255, 253, 163);
+}
+nav {
+    background-color: #e76f51;
+    text-align: center;
+}
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+nav ul li a:hover {
+    background-color: #f4a261;
+    color: #2a9d8f;
+}
+#domainImg {
+    max-width: 350px;
+}
+#colorImg {
+    max-width: 359px;
 }
