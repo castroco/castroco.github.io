@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bom.css">
+    <script src="js/bom.js"></script>
+</head>
+<body>
+    <h1>📘 Book of Mormon - Top 25</h1>
+    <main>
+        <div class="input">
+            <label>Enter Book and Chapter
+                <input type="text" id="favchap" placeholder="Alma 5" required></label>
+            <button type="submit">Add Chapter</button>
+        </div>
+        <div class="listcontainer">
+            <ul class="list">
+            </ul>
+        </div>
+    </main>
+</body>
+<script>
+    //alert("en script js");
+    const input = document.querySelector('input');
+    console.log(input);
+    const button = document.querySelector('button');
+    console.log(button);
+    const list = document.querySelector('ul');
+    console.log(list);
+    button.addEventListener('click', () => {
+        //alert("en la funcion");
+        if (input.value != '') {
+            let li = document.createElement('li');
+            let deletebutton = document.createElement('button');
+            li.textContent = input.value;
+            deletebutton.textContent = 'x';
+            li.append(deletebutton);
+            list.append(li);
+            input.value = '';
+            input.focus();
+            deletebutton.onclick = function() {
+                list.removeChild(li);
+                input.focus();
+            }
+        }
+    });
+
+</script>
+</html>
