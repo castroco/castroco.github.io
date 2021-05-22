@@ -1,3 +1,23 @@
+const input = document.querySelector('input');
+const button = document.querySelector('button');
+const list = document.querySelector('ul');
+button.addEventListener('click', () => {
+  //alert("en la funcion");
+  if (input.value != '') {
+      let li = document.createElement('li');
+      let deletebutton = document.createElement('button');
+      li.textContent = input.value;
+      deletebutton.textContent = 'x';
+      li.append(deletebutton);
+      list.append(li);
+      input.value = '';
+      input.focus();
+      deletebutton.onclick = function() {
+          list.removeChild(li);
+          input.focus();
+      }
+  }
+});
 
   /*
   let li = document.createElement('____');
