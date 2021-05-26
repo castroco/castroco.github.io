@@ -1,0 +1,16 @@
+@media only screen and (min-width: 32.5em) {
+	nav ul {
+        display: flex;
+    }
+    nav ul li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+        /*background-color: indigo;*/
+    }
+     
+}
