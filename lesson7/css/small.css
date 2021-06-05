@@ -1,5 +1,6 @@
 body {
     max-width: 1290px;
+    min-width: 320px;
     margin: 0 auto;
 }
 h2 {
@@ -8,7 +9,7 @@ h2 {
 }
 #hero-container {
     text-align: center;
-    background-color: red;
+    /*background-color: red;*/
     position: relative;
 }
 #hero-img {
@@ -74,6 +75,9 @@ nav ul li:first-child {
     
 }
 
+nav {
+    margin-bottom: 10px;
+}
 
 nav ul li a {
     color: white;
@@ -89,10 +93,29 @@ nav ul li a:hover {
     background-color: #f4a261;
     color: #2a9d8f;
 }
+
+#gallery {
+    display: block;
+    text-align: center;
+    /*background-color: red;*/
+}
+
+#gallery div img  {
+    max-width: 100%;
+}
+
+#gallery div p {
+    margin: 0;
+    text-align: justify;
+    padding: 0 40px;
+}
+
+
 footer {
     background-color: #2a9d8f;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
+    margin-top: 10px;
 }

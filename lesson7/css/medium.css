@@ -12,5 +12,16 @@
         flex: 1 1 100%;
         /*background-color: indigo;*/
     }
+    
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        grid-gap: 15px;
+        /*background-color: green;*/
+    }
+
+
      
 }
