@@ -1,0 +1,37 @@
+body {
+    max-width: 600px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    background-color: #2a9d8f;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 5px 0;
+}
+
+#gallery {
+    display: block;
+    text-align: center;
+}
+
+#gallery div img  {
+    max-width: 100%;
+}
+
+#gallery div img[data-src] {
+    filter: blur(0.9em);
+  }
+  
+#gallery div img {
+    filter: blur(0em);
+    transition: filter 2.2s;
+  }
+
+#gallery div p {
+    margin: 0;
+    text-align: justify;
+    padding: 0 40px;
+}

@@ -104,6 +104,15 @@ nav ul li a:hover {
     max-width: 100%;
 }
 
+#gallery div img[data-src] {
+    filter: blur(0.3em);
+  }
+  
+#gallery div img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
 #gallery div p {
     margin: 0;
     text-align: justify;
