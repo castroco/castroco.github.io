@@ -28,9 +28,10 @@ section {
     background-color:  rgb(231, 111, 81);
     box-shadow: 2px 2px 3px 0 rgb(0, 0, 0, 0.65);
     border-radius: 5px;
+    padding: 5px;
 }
 img {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 @media only screen and (min-width: 539px) {
@@ -40,6 +41,10 @@ img {
         grid-template-rows: auto;
         justify-content: space-evenly;
         grid-gap: 25px;
+    }
+    .cards section:hover {
+        box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
+        padding: 4px;
     }
 }
 
@@ -51,9 +56,5 @@ img {
         grid-gap: 15px;
         justify-items: space-evenly;
         /*background-color: blue;*/
-    }
-    .cards section:hover {
-        box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
-        padding: 4px;
     }
 }
