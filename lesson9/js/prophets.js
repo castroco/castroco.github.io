@@ -16,8 +16,8 @@ fetch(requestURL).then(function (response) {
                 let birthPlace = document.createElement('p');
                 let image = document.createElement('img');
                 h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-                birthDate.textContent = prophets[i].birthdate;
-                birthPlace.textContent = prophets[i].birthplace;
+                birthDate.textContent = 'Birth Date: ' + prophets[i].birthdate;
+                birthPlace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
                 image.setAttribute('src', prophets[i].imageurl);
                 image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + '-' + prophets[i].order);
                 card.appendChild(h2);
