@@ -8,7 +8,7 @@ h2 {
 }
 #hero-container {
     text-align: center;
-    background-color: red;
+    /*background-color: red;*/
     position: relative;
 }
 #hero-img {
