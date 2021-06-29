@@ -65,8 +65,8 @@ if('IntersectionObserver' in window) {
  
 }
 
-const forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10d779ad423d396cdcffa6696f58adce&units=imperial';
-const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10d779ad423d396cdcffa6696f58adce&units=imperial';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=10d779ad423d396cdcffa6696f58adce&units=imperial';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10d779ad423d396cdcffa6696f58adce&units=imperial';
 
 fetch(apiURL)
     .then((response) => response.json())
