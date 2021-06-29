@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuenteClima</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/preston.js" defer></script>
+</head>
+<body onload="addUpdatedDate()">
+    <p id="banner">Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    <header><img src="images/icon.svg" alt="icon image with a sun, a clud, and a snow flake" id="websiteIcon">
+        <div class="headings">
+            <h1>Puente Alto Clima</h1>
+            <div>All that you need everyday</div>
+        </div>
+    </header>  
+    <nav class="navigation">
+        <ul>
+            <li onclick="toggleMenu()"><a href="#">&#9776; Menu</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div id="hero-container">
+            <picture id="hero-container2">
+                <source media="(max-width: 539px)" srcset="images/small-img.jpg">
+                <source media="(min-width: 539px) and (max-width: 600px)" srcset="images/medium1-img.jpg">
+                <source media="(min-width: 600px) and (max-width: 900px)" srcset="images/medium2-img.jpg">
+                <source media="(min-width: 900px)" srcset="images/large-img.jpg">
+                <img id="hero-img" src="images/small-img.jpg" alt="main hero picture"> 
+            </picture>
+            <section id="summary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="currently">Sunny</span></p>
+                <p>Temperature: <span id="temperature">8</span>&#x2109;</p>
+                <p>Humidity: <span id="humidity"></span>&nbsp;%</p>
+                <p>Wind Speed: <span id="windspeed"></span>&nbsp; mph;</p>
+                <p>Wind Chill: <span id="windchill"></span>&nbsp; &#x2109;</p>
+            </section>
+        </div>
+        <section id="forecast">
+            <div>
+                <p class="titleForecast">Monday</p>
+                <img class="picForecast">
+                <p class="tempForecast">7&#x2109;</p>
+            </div>
+            <div>
+                <p class="titleForecast">Monday</p>
+                <img class="picForecast">
+                <p class="tempForecast">7&#x2109;</p>
+            </div>
+            <div>
+                <p class="titleForecast">Monday</p>
+                <img class="picForecast">
+                <p class="tempForecast">7&#x2109;</p>
+            </div>
+            <div>
+                <p class="titleForecast">Monday</p>
+                <img class="picForecast">
+                <p class="tempForecast">7&#x2109;</p>
+            </div>
+            <div>
+                <p class="titleForecast">Monday</p>
+                <img class="picForecast">
+                <p class="tempForecast">7&#x2109;</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="fullYear"></p>
+        <p id="lastUpdated">Last updated</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
