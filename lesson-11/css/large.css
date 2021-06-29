@@ -1,0 +1,22 @@
+@media only screen and (min-width: 900px) {
+
+    #summary {
+        position: absolute;
+        top: 15px;
+        left: 13%;
+    }
+
+    #gallery div:hover {
+        box-shadow: 0 10px 10px 0 #e76f51;
+        border-radius: 5px;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        justify-items: space-evenly;
+        /*background-color: blue;*/
+    }
+}

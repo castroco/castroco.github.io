@@ -1,0 +1,43 @@
+@media only screen and (min-width: 539px) {
+	nav ul {
+        display: flex;
+    }
+    nav ul li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+        /*background-color: indigo;*/
+    }
+
+    #hero-container {
+        position: relative;
+    }
+
+    #pImg {
+        margin: 0;
+    }
+
+    #summary {
+        position: absolute;
+        top: 15px;
+        left: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        grid-gap: 15px;
+        /*background-color: green;*/
+    }
+
+
+     
+}
