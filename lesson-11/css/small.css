@@ -94,7 +94,7 @@ nav ul li a:hover {
     color: #2a9d8f;
 }
 
-.active {
+.active a {
     text-decoration: underline;
 }
 
