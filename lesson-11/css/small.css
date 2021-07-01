@@ -94,6 +94,10 @@ nav ul li a:hover {
     color: #2a9d8f;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 #gallery {
     display: block;
     text-align: center;

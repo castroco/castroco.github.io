@@ -130,7 +130,7 @@ function windChill(tempF, speed) {
     if (tempF <= 50 && speed > 3) {
         return factor;
     } else {
-        return "N/A";
+        return factor;
     }
     
     
