@@ -19,6 +19,9 @@
         justify-items: space-evenly;
         /*background-color: blue;*/
     }
+    #gallery div img {
+        margin: 10px 0;
+    }
 
     #firstArticle {
         /*background-color: red;*/
