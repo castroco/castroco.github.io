@@ -1,5 +1,3 @@
-((new Date()).getDay() == 5) ? document.querySelector('#banner').style.display = 'block' : console.log((new Date()).getDay());
-
 function addUpdatedDate() {
     try {
         var dateUpdated = document.lastModified;
