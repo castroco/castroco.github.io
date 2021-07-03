@@ -84,41 +84,6 @@ fetch(apiURL)
     }
 );
 
-fetch(forecastURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-            console.log(jsObject);
-            const listOfTemps = jsObject.list;
-            console.log(listOfTemps);
-            let forecastDays = [];
-            let forecastIcons = [];
-            let forecastTemps = [];
-            listOfTemps.forEach(temp => {
-                let hora = temp.dt_txt.split(' ')[1];
-                console.log(hora);
-                if (hora == '18:00:00'){
-                    forecastDays.push(temp.dt_txt.split(' ')[0]);
-                    forecastTemps.push(temp.main.temp);
-                    forecastIcons.push(temp.weather[0].icon);
-                }
-            })
-            const titleForecast = document.querySelectorAll(".titleForecast");
-            const picForecast = document.querySelectorAll(".picForecast");
-            const tempForecast = document.querySelectorAll(".tempForecast");
-            let weekDay = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"];
-            console.log(forecastDays);
-            for (i=0; i<5; i++) {
-                titleForecast[i].textContent = weekDay[new Date(forecastDays[i]).getUTCDay()];
-                const srcImg = 'https://openweathermap.org/img/w/' + forecastIcons[i] + '.png';
-                console.log(srcImg);
-                picForecast[i].setAttribute("src",srcImg);
-                tempForecast[i].textContent = forecastTemps[i];
-                console.log("i: ", i);
-            };
-            
-    }
-);
-
 function windChill(tempF, speed) {
     /*tempF = 40;*/
     let factor = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
@@ -130,4 +95,4 @@ function windChill(tempF, speed) {
     }
     
     
-}
+};
