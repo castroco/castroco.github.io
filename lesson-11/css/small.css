@@ -100,6 +100,7 @@ nav ul li a:hover {
 
 .active a {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 #gallery {
