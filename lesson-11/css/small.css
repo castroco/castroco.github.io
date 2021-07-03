@@ -2,6 +2,10 @@ body {
     max-width: 1290px;
     min-width: 320px;
     margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+h1 h2 h3 {
+    font-family: 'Roboto', sans-serif; 
 }
 h2 {
     margin: 0;
@@ -123,8 +127,15 @@ nav ul li a:hover {
     padding: 0 40px;
 }
 
+/* Start of Weather sumary */
 #summary {
     background-color: #f4a261;
+    padding: 5px 0;
+    margin: 0 0 5px 0;
+}
+
+#summary p {
+    margin: 10px 0;
 }
 
 
@@ -157,4 +168,24 @@ footer {
 }
 .tempForecast {
     margin: 0;
+}
+
+#firstArticle {
+    /*background-color: #f8ad70;*/
+    padding: 10px;
+    border: 3px solid #f4a261;
+    margin: 10px 0 ;
+}
+#firstArticle img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#firstArticle h3 {
+    text-align: center;
+}
+
+#firstArticle p {
+    text-align: justify;
 }

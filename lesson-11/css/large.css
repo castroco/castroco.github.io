@@ -19,4 +19,27 @@
         justify-items: space-evenly;
         /*background-color: blue;*/
     }
+
+    #firstArticle {
+        /*background-color: red;*/
+        /*border: 3px solid #f4a261;*/
+        margin: 10px auto ;
+        position: relative;
+        max-width: 960px;
+        padding: 20px;
+        border: 1px solid #f4a261;
+    }
+    #firstArticle img {
+        float: right;
+        max-width: 400px;
+        margin: 20px 0 20px 20px;
+    }
+-s
+    #firstArticle p {
+    
+    }
+    
+    #firstArticle h3 {
+        /*text-align: center;*/
+    }
 }
