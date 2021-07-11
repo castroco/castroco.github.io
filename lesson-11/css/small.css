@@ -99,8 +99,9 @@ nav ul li a:hover {
 }
 
 .active a {
-    text-decoration: underline;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #f4a261;
+    color: #2a9d8f;
 }
 
 #gallery {
@@ -189,4 +190,11 @@ footer {
 
 #firstArticle p {
     text-align: justify;
+}
+#thankstParagraph {
+    margin: 0 auto;
+    text-align: center;
+}
+fieldset {
+    
 }

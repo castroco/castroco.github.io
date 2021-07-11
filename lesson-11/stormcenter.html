@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuenteClima</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/preston.js" defer></script>
+</head>
+<body onload="addUpdatedDate()">
+    <p id="banner">Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    <header><img src="images/icon.svg" alt="icon image with a sun, a clud, and a snow flake" id="websiteIcon">
+        <div class="headings">
+            <h1>Puente Alto Clima</h1>
+            <div>All that you need everyday</div>
+        </div>
+    </header>  
+    <nav class="navigation">
+        <ul>
+            <li onclick="toggleMenu()"><a href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Report</h2>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full name* <input type="text" name="fullName" required></label>
+                <label>Email* <input type="email" name="email" required></label>
+                <label>Phone number <input type="tel" name="phone"></label>
+                <label>Zip code <input type="number" name="zip"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Data</legend>
+                <label>Storm date <input type="date" name="stormDate" required></label>
+                <label>Storm Type <input list="stormType" name="stormType" required></label>
+                    <datalist id="stormType">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                <label>Storm severity (1-10) <input type="number" name="severity" min="1" max="10"></label>
+                <label>Storm region
+                    <select name="region">
+                        <option value="" disabled selected>Please select</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>User in danger Level</div>
+                <label><input type="radio" name="userInDanger" value="yes">yes</label>
+                <label><input type="radio" name="userInDanger" value="maybe">maybe</label>
+                <label><input type="radio" name="userInDanger" value="no">no</label>
+                <label>Aditional information <textarea name="info" id="info" cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Report Storm">  
+        </form>
+        
+    </main>
+    <footer>
+        <p id="fullYear"></p>
+        <p id="lastUpdated">Last updated</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
