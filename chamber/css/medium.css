@@ -6,4 +6,10 @@ nav ul li {
     flex: 1 1 100%;
 }
 
+#advertContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
 }

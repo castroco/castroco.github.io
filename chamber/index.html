@@ -15,7 +15,10 @@
 </head>
 <body onload="addUpdatedDate()">
     <div id="container">
-        <header><img src="images/pacoc.svg" width="80px" height="80px alt="icon image with a sun, a clud, and a snow flake" id="websiteIcon"> <h1>Puente Alto Chamber of Commerce</h1></header>
+        <header>
+            <img src="images/pacoc.svg" width="80px" height="80px alt="icon image with a sun, a clud, and a snow flake" id="websiteIcon"> 
+            <h1>Puente Alto Chamber of Commerce</h1>
+        </header>
         <nav>
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
@@ -29,14 +32,39 @@
         <h2>Puente Alto Chile</h2>
         <div id="hero-img">
             <picture id="hero-container2">
-                <source media="(max-width: 500px)" srcset="images/paltoSmall.jpg">
-                <source media="(min-width: 500px) and (max-width: 900px)" srcset="images/paltoMedium.jpg">
-                <source media="(min-width: 900px)" srcset="images/paltoLarge.jpg">
+                <source media="(max-width: 500px)" srcset="images/smallImg.jpg">
+                <source media="(min-width: 500px) and (max-width: 900px)" srcset="images/mediumImg.jpg">
+                <source media="(min-width: 900px)" srcset="images/largeImg.jpg">
                 <img id="hero-img" src="images/paltoSmall.jpg" alt="main hero picture"> 
             </picture>
+        </div>
+        <h2>Featured Businesses</h2>
+        <section id="advertContainer">
+            <div>
+                <h3>Doctora Jara Health Care</h3>
+                <a href="https://consultamedica-doctor.negocio.site" target="new"><img src="images/healthCare.jpg" alt="Picture of private health care"></a>
+                <p>Twenty years at the service of the people in Puente Alto</p>
+            </div>
+            <div>
+                <h3>Inacap</h3>
+                <a href="http://www.inacap.cl" target="new"><img src="images/inacap400.jpg" alt="Picture of an Education Center"></a>
+                <p>National Intitute of Education- Short careers</p>
+            </div>
+            <div>
+                <h3>Pianos Barrios</h3>
+                <a href="https://pianosbarrios.com" target="new"><img src="images/pianosBarrios.jpg" alt="Picture of Juan Luis Barrios, an expert in pianos"></a>
+                <p>Experts in tuning and repairing pianos</p>
+            </div>
+        </section>
         <footer>
             <p id="fullYear"></p>
             <p id="lastUpdated">Last updated</p>
+            <div id="socialIcons">
+                <a href="#"><img src="images/faceicon.svg" width="30px" height="30px" alt=""></a>
+                <a href="#"><img src="images/tuitericon.svg" width="30px" height="30px" alt=""></a>
+                <a href="#"><img src="images/instagramicon.svg" width="30px" height="30px" alt=""></a>
+                <a href="#"><img src="images/whatsappicon.svg" width="30px" height="30px" alt=""></a>
+            </div>
         </footer>
 
     </div>
