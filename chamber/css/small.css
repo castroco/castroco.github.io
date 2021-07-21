@@ -59,6 +59,19 @@ h2 {
     max-width: 100%;
 }
 
+#joinContainer {
+    display: block;
+}
+
+#joinContainer div {
+    padding: 20px 30px 30px 30px;
+    border: solid 1px #f94144;
+}
+
+#joinContainer div p {
+    margin: 35px 0;
+}
+
 h3 {
     margin: 25px 0 20px 0;
 }
@@ -120,4 +133,19 @@ nav ul li a:hover {
 p {
     text-align: justify;
     padding: 0 20px;
+}
+.darkButton {
+    background-color: #f94144;
+    color: white;
+    border-radius: 4px;
+    padding: 1.1rem 2.2rem 1.1rem 2.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.darkButton:hover {
+    background-color: #f9c74f;
+    color: #f94144;
+}
+#divCurrentWeather div, #divForecast div {
+    border: solid 1px #f9844a;
 }

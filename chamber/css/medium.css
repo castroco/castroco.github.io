@@ -1,15 +1,54 @@
 @media only screen and (min-width: 500px) {
-nav ul {
-    display: flex;
-}	
-nav ul li {
-    flex: 1 1 100%;
-}
+    nav ul {
+        display: flex;
+    }	
+    nav ul li {
+        flex: 1 1 100%;
+    }
 
-#advertContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-}
+    #advertContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
 
+    #joinContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    #infoContainer {
+        display: grid;
+        grid-template-columns: 3.5fr 3fr;
+        grid-gap: 1rem;
+    }
+
+    #events article {
+        padding: 20px;
+    }
+    #events article img {
+        width: 200px;
+        height: 132px;
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+    #events article p {
+        margin: 0;
+        padding: 0;
+    }
+    #divAllWeather {
+        display: grid;
+        grid-template-rows: 5rem 10rem 15rem;
+        grid-gap: 0.5rem;
+    }
+    #divCurrentWeather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+    }
+    #divForecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
+    }
 }

@@ -12,7 +12,7 @@ function addUpdatedDate() {
         let day = new Date();
         let fullYear = day.getFullYear();
         const pObj2 = document.querySelector('#fullYear');
-        let message2 = `&#169; | ${fullYear} | Carlos Castro | Santiago | <a href= "https://www.byui.edu/online">BYU Online Learning</a>`
+        let message2 = `&#169; | ${fullYear} | Carlos Castro | <a href= "https://www.byui.edu/online">BYU Online Learning</a>`
         pObj2.innerHTML = message2;
     }
         catch(err) {
