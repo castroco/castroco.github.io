@@ -89,6 +89,28 @@ footer #lastUpdated {
     font-size: 0.8em;
     color:#f9c74f;
 }
+
+/* responsive menu */
+nav ul li:first-child {
+    display: block;
+    /*padding: 0.5rem 0;*/
+}
+
+.navigation li {
+    display: none;
+    /*margin: 0;
+    padding: 0.5rem 0;*/
+}
+
+.responsive li {
+    display: block;
+    /*background-color: indigo;*/
+    /*margin: 0;
+    padding: 0.5rem 0;*/
+    
+}
+
+/* end responsive menu */
 nav {
     background-color: #f9844a;
     text-align: center;
@@ -107,17 +129,10 @@ nav li a {
     text-decoration: none;
     font-size: 1 rem;
 }
-nav ul li a:hover {
-    background-color: #f8961e;
-    color: #f94144;
-    font-weight: 700;
-    border-bottom: solid #f94144;
-}
 
 .active a {
     background-color: #f8961e;
     color: #f94144;
-    font-weight: 700;
 }
 
 
@@ -148,4 +163,32 @@ p {
 }
 #divCurrentWeather div, #divForecast div {
     border: solid 1px #f9844a;
+}
+
+#divForecast div p, #divCurrentWeather div p {
+    text-align: center;
+}
+#events article img {
+    max-width: 100%;
+}
+
+#events article p a {
+    text-decoration: none;
+    color: #f94144;
+}
+/*city web page   */
+#articlesArea {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+#articlesArea article img {
+        float: right;
+        max-width: 100px;
+        margin: 20px 0 20px 20px;
+}
+
+.selected {
+    grid-column: span 2;
 }

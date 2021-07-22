@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puente Alto Chamber of Commerce</title>
-    <link rel="shortcut icon" href="images/pacoc.svg">
+    <link rel="shortcut icon" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normailze.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <script src="js/chamber.js"></script>
+    <script src="js/chamber.js" defer></script>
 </head>
-<body onload="addUpdatedDate()">
+<body onload="addUpdatedDate2()">
     <div id="container">
         <header>
             <img src="images/pacoc.svg" width="80px" height="80px alt="An icon of a truck with the letters PACOC in it and the meaning of the letters: Puente Alto Chamber Of Commerce" id="websiteIcon"> 
             <h1>Puente Alto Chamber of Commerce</h1>
         </header>
         <nav>
-            <ul>
+            <ul class="navigation">
+                <li onclick="toggleMenu()"><a href="#">&#9776; Menu</a></li>
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="city.html">Puente Alto</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -88,44 +89,51 @@
                 </div>
                 <div id="divForecast">
                     <div>
-                        <p class="titleForecast">Monday</p>
+                        <p class="titleForecast">+ 1 Day</p>
                         <img class="picForecast">
                         <p class="tempForecast">7&#x2109;</p>
                     </div>
                     <div>
-                        <p class="titleForecast">Monday</p>
+                        <p class="titleForecast">+ 2 Days</p>
                         <img class="picForecast">
                         <p class="tempForecast">7&#x2109;</p>
                     </div>
                     <div>
-                        <p class="titleForecast">Monday</p>
+                        <p class="titleForecast">+ 3 Days</p>
                         <img class="picForecast">
                         <p class="tempForecast">7&#x2109;</p>
                     </div>
                 </div>
             </div>
             <div id="events">
-                <h2>Events</h2>
+                <h2>Upcoming Events</h2>
                 <article>
-                    <h3>Title Number 1</h4> 
-                    <img class="eventPicture" src="images/1-400.jpg" alt="">
-                    <p class="eventText">AAAAAA Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Nulla eum quos illum soluta sint at qui
-                        alias aut illo nobis tempore rem sapiente quaerat enim,
-                        sequi ex sunt aliquam cupiditate! Lorem, ipsum dolor sit amet 
-                        consectetur adipisicing elit. Mollitia iure aperiam dolore molestiae ab dignissimos, facilis aspernatur.
-                         Commodi, nam at consectetur error libero nulla exercitationem blanditiis! Est expedita non cum?
-                    </p>
+                    <h3>Chile takes the lead in the global recovery process of trade sales</h3> 
+                    <img class="eventPicture" src="images/sales.jpg" alt="">
+                    <p class="eventText">The study carried out by the CCS highlights that retail sales
+                        accumulate a growth of 27% in the first 5 months of the year, surpassing major world powers.
+                    <p>A significant rebound so far this year is for global retail sales. Between January and
+                        May, the global average growth reached 17%, driven in part by the low comparison bases of last
+                        year (-4.4% as of the same date), but also by the greater liquidity of consumers as a result of
+                        abundant programs of fiscal support, by expansionary monetary policies, and by the improvement 
+                        in contagion indicators linked to the advancement of vaccination 
+                        <a href="https://www.ccs.cl/2021/07/21/chile-pasa-a-la-delantera-en-el-proceso-de-recuperacion-mundial-de-las-ventas-del-comercio/"
+                        target="new">
+                        ... continue</a></p>
+                    
                 </article>
                 <article>
-                    <h3>Title Number 2</h4>
-                    <img class="eventPicture" src="images/1-400.jpg" alt="">
-                    <p class="eventText">AAAAAA Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Nulla eum quos illum soluta sint at qui
-                        alias aut illo nobis tempore rem sapiente quaerat enim,
-                        sequi ex sunt aliquam cupiditate! Lorem, ipsum dolor sit amet 
-                        consectetur adipisicing elit. Mollitia iure aperiam dolore molestiae ab dignissimos, facilis aspernatur.
-                         Commodi, nam at consectetur error libero nulla exercitationem blanditiis! Est expedita non cum?
+                    <h3>CORFO and PMG Chile summon SMEs and companies for a new version of the study on Digital Transformation</h4>
+                    <img class="eventPicture" src="images/digital.jpg" alt="">
+                    <p class="eventText">Through this instrument, the aim is to obtain a national radiography on the level
+                        of maturity and adoption of technology in smaller and larger organizations.</p>
+                    <p>Corfo and the consulting firm PMG Chile, invited SMEs and large companies in the country to participate
+                        in the fourth version of the Digital Transformation Index (ITD). The instrument seeks to collect and
+                        systematize information at the national level, in the five key dimensions to carry out the digitization
+                        process in the different organizations in Chile.
+                        <a href="https://www.ccs.cl/2021/07/07/corfo-camara-de-comercio-de-santiago-y-pmg-chile-convocan-a-pymes-y-empresas-para-nueva-version-de-estudio-en-transformacion-digital/" 
+                        target="new">
+                        ... continue</a>
                     </p>
                 </article>
             </div>

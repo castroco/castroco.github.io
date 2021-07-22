@@ -1,10 +1,32 @@
 @media only screen and (min-width: 500px) {
     nav ul {
         display: flex;
-    }	
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
     nav ul li {
         flex: 1 1 100%;
     }
+
+    nav ul li a:hover {
+        background-color: #f8961e;
+        color: #f94144;
+        font-weight: 700;
+        border-bottom: solid #f94144;
+    }
+
+    .active a {
+        background-color: #f8961e;
+        color: #f94144;
+        font-weight: 700;
+    }   
 
     #advertContainer {
         display: grid;
@@ -38,7 +60,7 @@
     }
     #divAllWeather {
         display: grid;
-        grid-template-rows: 5rem 10rem 15rem;
+        grid-template-rows: 0.5fr 1fr 1fr 1.4fr;
         grid-gap: 0.5rem;
     }
     #divCurrentWeather {
@@ -51,4 +73,5 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 0.5rem;
     }
+
 }

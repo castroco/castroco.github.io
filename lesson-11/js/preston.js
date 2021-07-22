@@ -86,7 +86,7 @@ fetch(apiURL)
     }
 );
 
-fetch(forecastURL)
+/*fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
             console.log(jsObject);
@@ -119,7 +119,7 @@ fetch(forecastURL)
             };
             
     }
-);
+); */
 
 function windChill(tempF, speed) {
     /*tempF = 40;*/
