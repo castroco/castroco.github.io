@@ -51,7 +51,7 @@ h2 {
 }
 
 #advertContainer div:hover {
-    box-shadow: 0 0 10px 0 #277da1;
+    box-shadow: 0 0 15px 0 #277da1;
     border-radius: 5px;
 }
 
@@ -186,10 +186,22 @@ p {
 #articlesArea article {
     position: relative;
     overflow: hidden;
+    transition: 0.7s;
+    
+}
+
+#articlesArea article:hover {
+    box-shadow: 0 0 16px 0 #277da1;
+    border-radius: 5px;
+}
+
+#articlesArea article div a {
+    text-decoration: none;
+    color: unset;
 }
 
 #articlesArea article img {
-        max-width: 400px;
+    max-width: 400px;
 }
 
 #articlesArea article div {
@@ -201,12 +213,12 @@ p {
 
 }
 
-.selected img {
-  
+.citySelected2 {
+    grid-column: span2;
 }
 
-.selected {
-
+.citySelected3 {
+    grid-column: span3;
 }
 
 /*  Directory */
@@ -223,8 +235,22 @@ p {
     max-width: 100%;
 }
 .cardContent {
-    padding: 0 0 15px 0;
+    display: grid;
+    grid-template-rows: 4rem 3rem 3rem 3rem;
+    justify-items: left;
+    padding: 15px;
 }
+
+.cardContent h3 {
+    padding-left: 20px;
+}
+
 .cardContent p {
+    display: inline;
     margin: 0;
+
+}
+
+.cardContent a {
+    padding-left: 20px;
 }
